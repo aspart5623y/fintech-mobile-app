@@ -21,7 +21,7 @@ const CreateAccountScreen = ({ navigation }) => {
         <Input placeholder="Email Address" setValue={setEmail} value={email} extraStyle={style.inputMb} />
         <Input placeholder="Password" setValue={setPassword} value={password} extraStyle={style.inputMb} />
 
-        <ButtonComponent title="Create Account" extraStyle={{ marginBottom: 44 }} onPress={() => navigation.navigate('Home')} />
+        <ButtonComponent title="Create Account" extraStyle={{ marginBottom: 44 }} onPress={() => navigation.navigate('Main')} />
         <BtnLinkComponent title="Already have an account?" onPress={() => navigation.navigate('Login')} />
       </View>
     </TouchableWithoutFeedback>

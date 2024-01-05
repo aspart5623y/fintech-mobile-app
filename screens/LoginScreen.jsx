@@ -20,7 +20,7 @@ const LoginScreen = ({ navigation }) => {
         <Input placeholder="Email Address" setValue={setEmail} value={email} extraStyle={style.inputMb} />
         <Input placeholder="Password" setValue={setPassword} value={password} extraStyle={style.inputMb} />
 
-        <ButtonComponent title="Login" extraStyle={{ marginBottom: 44 }} onPress={() => navigation.navigate('Home')} />
+        <ButtonComponent title="Login" extraStyle={{ marginBottom: 44 }} onPress={() => navigation.navigate('Main')} />
         <BtnLinkComponent title="Do not have an account?" onPress={() => navigation.navigate('CreateAccount')} />
       </View>
     </TouchableWithoutFeedback>
