@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     textAlign: "center", 
     fontSize: 17,
     fontStyle: "normal",
-    fontWeight: "semibold"
+    fontWeight: "600"
   }
 })
 

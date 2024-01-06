@@ -39,7 +39,7 @@ const style = StyleSheet.create({
     color: "#474747", 
     fontSize: 14,
     fontStyle: "normal",
-    fontWeight: 'normal'
+    fontWeight: "400"
   },
   icon: {
     height: 60,

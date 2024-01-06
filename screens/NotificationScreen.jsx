@@ -1,7 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import BackBtn from '../components/BackBtn';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Notification from '../components/Notification';
 
 const NotificationScreen = ({ navigation }) => {
   return (
@@ -9,8 +10,18 @@ const NotificationScreen = ({ navigation }) => {
       <View style={style.container}>
         <BackBtn onPress={() => navigation.goBack()} />
         <Text style={style.headerHeroText}>Notification</Text>
-
-
+        <ScrollView showsVerticalScrollIndicator={false} style={style.scrollContainer}>
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+        </ScrollView>
       </View>
     </SafeAreaView>
   )
@@ -29,8 +40,11 @@ const style = StyleSheet.create({
     fontSize: 34,
     fontStyle: "normal",
     fontWeight: "bold",
-    marginTop: 22,
-    marginBottom: 44
+    marginVertical: 22
+  },
+  scrollContainer: {
+    paddingTop: 22,
+    marginBottom: 22
   }
 });
 

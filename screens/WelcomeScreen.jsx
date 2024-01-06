@@ -53,7 +53,7 @@ const style = StyleSheet.create({
     // font-family: SF Pro Text;
     fontSize: 17,
     fontStyle: "normal",
-    fontWeight: "semibold",
+    fontWeight: "600",
     marginBottom: 79
   },
   btnMarginBm: {

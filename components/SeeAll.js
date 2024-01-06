@@ -15,10 +15,9 @@ const SeeAll = ({ text, extraStyle, onPress }) => {
 const style = StyleSheet.create({
   seeAll: {
     color: "#FE555D", 
-    textAlign: "right",
     fontSize: 18,
     fontStyle: "normal",
-    fontWeight: 'medium',
+    fontWeight: '500',
     flexDirection: 'row',
     alignItems: 'center',
   }

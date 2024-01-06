@@ -4,9 +4,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Fontisto } from '@expo/vector-icons'; 
 
 
-const PlansCard = ({ name, colors, desc }) => {
+const PlansCard = ({ name, colors, desc, onPress }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <LinearGradient style={style.card} colors={colors} >
         <Text style={style.cardTitle}>{name}</Text>
         <Text style={style.cardText}>{desc}</Text>
@@ -31,13 +31,14 @@ const style = StyleSheet.create({
     color: "#FFF", 
     fontSize: 17,
     fontStyle: "normal",
-    fontWeight: 'semibold'
+    fontWeight: '600'
   },
   cardText: {
     color: "#FFF", 
     fontSize: 13,
     fontStyle: "normal",
-    fontWeight: 'semibold'
+    fontWeight: '600',
+    opacity: 0.5
   },
   dollar: { 
     flexDirection: 'row', 

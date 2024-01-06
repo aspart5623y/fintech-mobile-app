@@ -16,6 +16,7 @@ import { AntDesign } from '@expo/vector-icons';
 import AccountScreen from './screens/AccountScreen';
 import ContactInfoScreen from './screens/ContactInfoScreen';
 import NotificationScreen from './screens/NotificationScreen';
+import BankAccountScreen from './screens/BankAccountScreen';
 
 
 function MyTabBar({ state, descriptors, navigation }) {
@@ -155,6 +156,10 @@ export default function App () {
           <Stack.Screen 
             name="Notification" 
             component={NotificationScreen} 
+          />
+          <Stack.Screen 
+            name="BankAccount" 
+            component={BankAccountScreen} 
           />
         </Stack.Navigator>
       </NavigationContainer>

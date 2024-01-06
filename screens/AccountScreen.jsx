@@ -37,6 +37,7 @@ const AccountScreen = ({ navigation }) => {
         <ProfileCard 
           icon={<FontAwesome name="bank" size={24} color="black" />}
           title="Bank Account Info"
+          onPress={() => navigation.navigate('BankAccount')}
         />
       
         <ProfileCard 
