@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "investment-app",
-    "slug": "investment-app",
+    "name": "fintech-app",
+    "slug": "fintech-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -30,6 +30,18 @@
     },
     "web": {
       "favicon": "./assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0623740a-ffaa-4ebe-bf58-2ba477e59d1b"
+      }
+    },
+    "owner": "aspart",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0623740a-ffaa-4ebe-bf58-2ba477e59d1b"
     }
   }
 }
